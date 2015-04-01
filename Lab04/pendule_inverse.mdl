@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.17"
+    ComputedModelVersion    "1.18"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       Dimension		      3
       Object {
 	$ObjectID		2
-	IsActive		[0]
+	IsActive		[1]
 	Location		[16.0, 52.0, 944.0, 670.0]
 	Object {
 	  $PropName		  "ModelBrowserInfo"
@@ -57,7 +57,7 @@ Model {
 	  LoadSaveID		  "2"
 	  Extents		  [894.0, 496.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
+	  Offset		  [0.0, 43.0]
 	}
       }
       Object {
@@ -94,7 +94,7 @@ Model {
       }
       Object {
 	$ObjectID		10
-	IsActive		[1]
+	IsActive		[0]
 	Location		[-8.0, -8.0, 1616.0, 876.0]
 	Object {
 	  $PropName		  "ModelBrowserInfo"
@@ -118,7 +118,7 @@ Model {
 	  $ClassName		  "Simulink.EditorInfo"
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "2"
+	  LoadSaveID		  "15"
 	  Extents		  [1566.0, 702.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
@@ -133,9 +133,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "ToniO"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Apr 01 16:38:09 2015"
-  RTWModifiedTimeStamp	  349807087
-  ModelVersionFormat	  "1.%<AutoIncrement:17>"
+  LastModifiedDate	  "Wed Apr 01 16:45:28 2015"
+  RTWModifiedTimeStamp	  349807471
+  ModelVersionFormat	  "1.%<AutoIncrement:18>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1045,7 +1045,7 @@ Model {
 	  ZOrder		  1
 	  FunctionName		  "sf_sfun"
 	  PortCounts		  "[5 2]"
-	  EnableBusSupport	  off
+	  EnableBusSupport	  on
 	  Port {
 	    PortNumber		    2
 	    Name		    "Force"
@@ -1136,7 +1136,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Pendule Inverse"
-	Location		[-8, -8, 1608, 868]
+	Location		[16, 52, 960, 722]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1179,7 +1179,7 @@ Model {
 	  SID			  "6"
 	  Position		  [310, 137, 700, 163]
 	  ZOrder		  -4
-	  Expr			  "(u(3) - m*l*(u(2)^2)*sin(u(4)) + m*g*sin(u(4))*cos(u(4))) / (M + m*(1-(cos(u(5)^2))"
+	  Expr			  "(u(3)-m*l*u(2)^2*sin(u(4))+m*g*sin(u(4))*cos(u(4)))/(M+m*(1-cos(u(5))^2))"
 	}
 	Block {
 	  BlockType		  Fcn
@@ -1412,7 +1412,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Visualisation"
-	Location		[492, 116, 1193, 545]
+	Location		[-8, -8, 1608, 868]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1500,6 +1500,15 @@ Model {
 	  AutoView		  off
 	  VideoDimensions	  "[]"
 	  AllowVariableSize	  off
+	  FigureProperties	  "{'Position', 'Name', 'Viewpoint', 'CameraBound', 'CameraDirection', 'CameraPosition', 'CameraUp"
+	  "Vector', 'ZoomFactor', 'Antialiasing', 'Headlight', 'Lighting', 'NavPanel', 'StatusBar', 'ToolBar', 'Textures', 'Tr"
+	  "ansparency', 'Triad', 'Wireframe', 'NavZones', 'NavMode', 'NavSpeed', 'CaptureFileFormat', 'CaptureFileName', 'Reco"
+	  "rd2DCompressMethod', 'Record2DCompressQuality', 'Record2D', 'Record2DFileName', 'Record2DFPS'; [5.0000000000000000e"
+	  "+00   9.2000000000000000e+01   5.7600000000000000e+02   3.8000000000000000e+02], '', '_untitled_1', 'on', [0.000000"
+	  "0000000000e+00   0.0000000000000000e+00  -1.0000000000000000e+00], [0.0000000000000000e+00   0.0000000000000000e+00"
+	  "   0.0000000000000000e+00], [0.0000000000000000e+00   1.0000000000000000e+00   0.0000000000000000e+00], [1.00000000"
+	  "00000000e+00], 'on', 'on', 'on', 'halfbar', 'on', 'on', 'on', 'on', 'none', 'off', 'off', 'fly', 'normal', 'tif', '"
+	  "%f_anim_%n.tif', 'auto', [7.5000000000000000e+01], 'off', '%f_anim_%n.avi', [1.5000000000000000e+01]} "
 	}
 	Line {
 	  SrcBlock		  "Mux"
