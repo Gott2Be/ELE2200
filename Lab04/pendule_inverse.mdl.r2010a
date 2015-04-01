@@ -1,12 +1,12 @@
 Model {
   Name			  "pendule_inverse"
-  Version		  8.1
+  Version		  7.5
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.17"
+    ComputedModelVersion    "1.15"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -16,126 +16,18 @@ Model {
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
   DataTypeOverride	  "UseLocalSettings"
-  DataTypeOverrideAppliesTo "AllNumericTypes"
   MinMaxOverflowLogging	  "UseLocalSettings"
   MinMaxOverflowArchiveMode "Overwrite"
-  FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
-  Object {
-    $PropName		    "BdWindowsInfo"
-    $ObjectID		    1
-    $ClassName		    "Simulink.BDWindowsInfo"
-    Array {
-      Type		      "Simulink.WindowInfo"
-      Dimension		      3
-      Object {
-	$ObjectID		2
-	IsActive		[0]
-	Location		[16.0, 52.0, 944.0, 670.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  3
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [8]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  4
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
-	  $ObjectID		  5
-	  $ClassName		  "Simulink.EditorInfo"
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "2"
-	  Extents		  [894.0, 496.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
-      }
-      Object {
-	$ObjectID		6
-	IsActive		[0]
-	Location		[492.0, 116.0, 701.0, 429.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  7
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [8]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  8
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
-	  $ObjectID		  9
-	  $ClassName		  "Simulink.EditorInfo"
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "15"
-	  Extents		  [651.0, 255.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
-      }
-      Object {
-	$ObjectID		10
-	IsActive		[1]
-	Location		[-8.0, -8.0, 1616.0, 876.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  11
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [8]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  12
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [1]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
-	  $ObjectID		  13
-	  $ClassName		  "Simulink.EditorInfo"
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "2"
-	  Extents		  [1566.0, 702.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [0.0, 0.0]
-	}
-      }
-      PropName		      "WindowsInfo"
-    }
-  }
   Created		  "Tue Mar 24 12:01:57 2009"
   Creator		  "Administrateur"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "ToniO"
+  LastModifiedBy	  "vidub"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Apr 01 16:38:09 2015"
-  RTWModifiedTimeStamp	  349807087
-  ModelVersionFormat	  "1.%<AutoIncrement:17>"
+  LastModifiedDate	  "Wed Mar 30 14:47:51 2011"
+  RTWModifiedTimeStamp	  223397256
+  ModelVersionFormat	  "1.%<AutoIncrement:15>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -143,7 +35,6 @@ Model {
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
-  ShowDesignRanges	  off
   ShowLoopsOnError	  on
   IgnoreBidirectionalLines off
   ShowStorageClass	  off
@@ -168,24 +59,6 @@ Model {
   AccelTemplateMakefile	  "accel_default_tmf"
   AccelMakeCommand	  "make_rtw"
   TryForcingSFcnDF	  off
-  Object {
-    $PropName		    "DataLoggingOverride"
-    $ObjectID		    14
-    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "pendule_inverse"
-    Array {
-      Type		      "Cell"
-      Dimension		      1
-      Cell		      "pendule_inverse"
-      PropName		      "logAsSpecifiedByModels_"
-    }
-    Array {
-      Type		      "Cell"
-      Dimension		      1
-      Cell		      ""
-      PropName		      "logAsSpecifiedByModelsSSIDs_"
-    }
-  }
   RecordCoverage	  off
   CovPath		  "/"
   CovSaveName		  "covdata"
@@ -228,14 +101,14 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      15
-      Version		      "1.13.0"
+      $ObjectID		      1
+      Version		      "1.10.0"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  16
-	  Version		  "1.13.0"
+	  $ObjectID		  2
+	  Version		  "1.10.0"
 	  StartTime		  "0.0"
 	  StopTime		  "inf"
 	  AbsTol		  "auto"
@@ -253,8 +126,6 @@ Model {
 	  MaxConsecutiveMinStep	  "1"
 	  RelTol		  "1e-3"
 	  SolverMode		  "Auto"
-	  EnableConcurrentExecution off
-	  ConcurrentTasks	  off
 	  Solver		  "ode45"
 	  SolverName		  "ode45"
 	  SolverJacobianMethodControl "auto"
@@ -269,8 +140,8 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  17
-	  Version		  "1.13.0"
+	  $ObjectID		  3
+	  Version		  "1.10.0"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -282,7 +153,6 @@ Model {
 	  SaveFinalState	  off
 	  SaveCompleteFinalSimState off
 	  SaveFormat		  "Array"
-	  SignalLoggingSaveFormat "ModelDataLogs"
 	  SaveOutput		  on
 	  SaveState		  off
 	  SignalLogging		  on
@@ -301,8 +171,8 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  18
-	  Version		  "1.13.0"
+	  $ObjectID		  4
+	  Version		  "1.10.0"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    4
@@ -317,13 +187,12 @@ Model {
 	  ConditionallyExecuteInputs on
 	  InlineParams		  off
 	  UseIntDivNetSlope	  off
-	  UseFloatMulNetSlope	  off
-	  UseSpecifiedMinMax	  off
 	  InlineInvariantSignals  off
 	  OptimizeBlockIOStorage  on
 	  BufferReuse		  on
 	  EnhancedBackFolding	  off
 	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
 	  ExpressionFolding	  on
 	  BooleansAsBitfields	  off
 	  BitfieldContainerType	  "uint_T"
@@ -350,11 +219,10 @@ Model {
 	  BufferReusableBoundary  on
 	  SimCompilerOptimization "Off"
 	  AccelVerboseBuild	  off
-	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  19
-	  Version		  "1.13.0"
+	  $ObjectID		  5
+	  Version		  "1.10.0"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
@@ -377,8 +245,6 @@ Model {
 	  MinStepSizeMsg	  "warning"
 	  TimeAdjustmentMsg	  "none"
 	  MaxConsecutiveZCsMsg	  "error"
-	  MaskedZcDiagnostic	  "warning"
-	  IgnoredZcDiagnostic	  "warning"
 	  SolverPrmCheckMsg	  "warning"
 	  InheritedTsInSrcMsg	  "warning"
 	  DiscreteInheritContinuousMsg "warning"
@@ -403,20 +269,18 @@ Model {
 	  UnnecessaryDatatypeConvMsg "none"
 	  VectorMatrixConversionMsg "none"
 	  InvalidFcnCallConnMsg	  "error"
-	  FcnCallInpInsideContextMsg "UseLocalSettings"
+	  FcnCallInpInsideContextMsg "Use local settings"
 	  SignalLabelMismatchMsg  "none"
 	  UnconnectedInputMsg	  "warning"
 	  UnconnectedOutputMsg	  "warning"
 	  UnconnectedLineMsg	  "warning"
 	  SFcnCompatibilityMsg	  "none"
-	  FrameProcessingCompatibilityMsg "warning"
 	  UniqueDataStoreMsg	  "none"
 	  BusObjectLabelMismatch  "warning"
 	  RootOutportRequireBusObject "warning"
 	  AssertControl		  "UseLocalSettings"
 	  EnableOverflowDetection off
 	  ModelReferenceIOMsg	  "none"
-	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
 	  ModelReferenceVersionMismatchMessage "none"
 	  ModelReferenceIOMismatchMessage "none"
 	  ModelReferenceCSMismatchMessage "none"
@@ -426,53 +290,29 @@ Model {
 	  ModelReferenceExtraNoncontSigs "error"
 	  StateNameClashWarn	  "warning"
 	  SimStateInterfaceChecksumMismatchMsg "warning"
-	  SimStateOlderReleaseMsg "error"
-	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "Warning"
 	  BusNameAdapt		  "WarnAndRepair"
 	  NonBusSignalsTreatedAsBus "none"
 	  LoggingUnavailableSignals "error"
 	  BlockIODiagnostic	  "none"
-	  SFUnusedDataAndEventsDiag "warning"
-	  SFUnexpectedBacktrackingDiag "warning"
-	  SFInvalidInputDataAccessInChartInitDiag "warning"
-	  SFNoUnconditionalDefaultTransitionDiag "warning"
-	  SFTransitionOutsideNaturalParentDiag "warning"
-	  SFUnconditionalTransitionShadowingDiag "warning"
-	  SFUndirectedBroadcastEventsDiag "warning"
-	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  20
-	  Version		  "1.13.0"
+	  $ObjectID		  6
+	  Version		  "1.10.0"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
 	  ProdBitPerLong	  32
-	  ProdBitPerLongLong	  64
-	  ProdBitPerFloat	  32
-	  ProdBitPerDouble	  64
-	  ProdBitPerPointer	  32
-	  ProdLargestAtomicInteger "Char"
-	  ProdLargestAtomicFloat  "None"
 	  ProdIntDivRoundTo	  "Undefined"
 	  ProdEndianess		  "Unspecified"
 	  ProdWordSize		  32
 	  ProdShiftRightIntArith  on
-	  ProdLongLongMode	  off
 	  ProdHWDeviceType	  "32-bit Generic"
 	  TargetBitPerChar	  8
 	  TargetBitPerShort	  16
 	  TargetBitPerInt	  32
 	  TargetBitPerLong	  32
-	  TargetBitPerLongLong	  64
-	  TargetBitPerFloat	  32
-	  TargetBitPerDouble	  64
-	  TargetBitPerPointer	  32
-	  TargetLargestAtomicInteger "Char"
-	  TargetLargestAtomicFloat "None"
 	  TargetShiftRightIntArith on
-	  TargetLongLongMode	  off
 	  TargetIntDivRoundTo	  "Undefined"
 	  TargetEndianess	  "Unspecified"
 	  TargetWordSize	  32
@@ -484,12 +324,11 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  21
-	  Version		  "1.13.0"
+	  $ObjectID		  7
+	  Version		  "1.10.0"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
 	  EnableParallelModelReferenceBuilds off
-	  ParallelModelReferenceErrorOnInvalidPool on
 	  ParallelModelReferenceMATLABWorkerInit "None"
 	  ModelReferenceNumInstancesAllowed "Multi"
 	  PropagateVarSize	  "Infer from blocks in model"
@@ -499,8 +338,8 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  22
-	  Version		  "1.13.0"
+	  $ObjectID		  8
+	  Version		  "1.10.0"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
 	  SFSimEcho		  on
@@ -509,13 +348,12 @@ Model {
 	  SimExtrinsic		  on
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
-	  SimParseCustomCode	  on
 	  SimBuildMode		  "sf_incremental_build"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  23
-	  Version		  "1.13.0"
+	  $ObjectID		  9
+	  Version		  "1.10.0"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    6
@@ -531,7 +369,6 @@ Model {
 	  GenCodeOnly		  off
 	  MakeCommand		  "make_rtw"
 	  GenerateMakefile	  on
-	  PackageGeneratedCodeAndArtifacts off
 	  TemplateMakefile	  "grt_default_tmf"
 	  GenerateReport	  off
 	  SaveLog		  off
@@ -548,14 +385,6 @@ Model {
 	  RTWUseSimCustomCode	  off
 	  IncludeHyperlinkInReport off
 	  LaunchReport		  off
-	  PortableWordSizes	  off
-	  GenerateErtSFunction	  off
-	  CreateSILPILBlock	  "None"
-	  CodeExecutionProfiling  off
-	  CodeExecutionProfileVariable "executionProfile"
-	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation off
-	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
 	  IncludeERTFirstTime	  off
@@ -565,9 +394,6 @@ Model {
 	  GenerateTraceReportSf	  off
 	  GenerateTraceReportEml  off
 	  GenerateCodeInfo	  off
-	  GenerateWebview	  off
-	  GenerateCodeMetricsReport off
-	  GenerateCodeReplacementReport	off
 	  RTWCompilerOptimization "Off"
 	  CheckMdlBeforeBuild	  "Off"
 	  CustomRebuildMode	  "OnUpdate"
@@ -575,8 +401,8 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      24
-	      Version		      "1.13.0"
+	      $ObjectID		      10
+	      Version		      "1.10.0"
 	      Array {
 		Type			"Cell"
 		Dimension		16
@@ -607,15 +433,13 @@ Model {
 	      PreserveName	      off
 	      PreserveNameWithParent  off
 	      ShowEliminatedStatement off
-	      OperatorAnnotations     off
 	      IncAutoGenComments      off
 	      SimulinkDataObjDesc     off
 	      SFDataObjDesc	      off
-	      MATLABFcnDesc	      off
 	      IncDataTypeInIds	      off
 	      MangleLength	      1
 	      CustomSymbolStrGlobalVar "$R$N$M"
-	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrType     "$N$R$M"
 	      CustomSymbolStrField    "$N$M"
 	      CustomSymbolStrFcn      "$R$N$M$F"
 	      CustomSymbolStrFcnArg   "rt$I$N$M"
@@ -626,22 +450,19 @@ Model {
 	      ParamNamingRule	      "None"
 	      SignalNamingRule	      "None"
 	      InsertBlockDesc	      off
-	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
-	      MATLABSourceComments    off
 	      EnableCustomComments    off
-	      InternalIdentifier      "Shortened"
 	      InlinedPrmAccess	      "Literals"
 	      ReqsInCode	      off
 	      UseSimReservedNames     off
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      25
-	      Version		      "1.13.0"
+	      $ObjectID		      11
+	      Version		      "1.10.0"
 	      Array {
 		Type			"Cell"
-		Dimension		15
+		Dimension		16
 		Cell			"IncludeMdlTerminateFcn"
 		Cell			"CombineOutputUpdateFcns"
 		Cell			"SuppressErrorStatus"
@@ -650,21 +471,23 @@ Model {
 		Cell			"GenerateTestInterfaces"
 		Cell			"ModelStepFunctionPrototypeControlCompliant"
 		Cell			"CPPClassGenCompliant"
-		Cell			"PortableWordSizes"
+		Cell			"MultiInstanceERTCode"
 		Cell			"PurelyIntegerCode"
-		Cell			"GenerateAllocFcn"
+		Cell			"SupportNonFinite"
 		Cell			"SupportComplex"
 		Cell			"SupportAbsoluteTime"
 		Cell			"SupportContinuousTime"
 		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
 		PropName		"DisabledProps"
 	      }
 	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
 	      TargetLibSuffix	      ""
 	      TargetPreCompLibLocation ""
-	      CodeReplacementLibrary  "ANSI_C"
+	      TargetFunctionLibrary   "ANSI_C"
 	      UtilityFuncGeneration   "Auto"
 	      ERTMultiwordTypeDef     "System defined"
+	      ERTCodeCoverageTool     "None"
 	      ERTMultiwordLength      256
 	      MultiwordLength	      2048
 	      GenerateFullHeader      on
@@ -674,11 +497,9 @@ Model {
 	      ModelReferenceCompliant on
 	      ParMdlRefBuildCompliant on
 	      CompOptLevelCompliant   on
-	      ConcurrentExecutionCompliant on
 	      IncludeMdlTerminateFcn  on
 	      GeneratePreprocessorConditionals "Disable all"
 	      CombineOutputUpdateFcns off
-	      CombineSignalStateStructs	off
 	      SuppressErrorStatus     off
 	      ERTFirstTimeCompliant   off
 	      IncludeFileDelimiter    "Auto"
@@ -695,12 +516,10 @@ Model {
 	      SupportVariableSizeSignals off
 	      EnableShiftOperators    on
 	      ParenthesesLevel	      "Nominal"
-	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      PortableWordSizes	      off
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    off
 	      AutosarCompliant	      off
-	      GRTInterface	      on
-	      GenerateAllocFcn	      off
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -712,48 +531,29 @@ Model {
 	      RTWCAPISignals	      off
 	      RTWCAPIParams	      off
 	      RTWCAPIStates	      off
-	      RTWCAPIRootIO	      off
 	      GenerateASAP2	      off
 	    }
 	    PropName		    "Components"
 	  }
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  26
-	  Version		  "1.13.0"
+	  $ObjectID		  12
+	  Version		  "1.10.0"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
-	  Array {
-	    Type		    "Cell"
-	    Dimension		    1
-	    Cell		    " "
-	    PropName		    "HDLConfigFile"
-	  }
-	  HDLCActiveTab		  "0"
 	}
 	PropName		"Components"
       }
       Name		      "Configuration"
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 200, 197, 1080, 827 ] 
+      ConfigPrmDlgPosition    " [ 200, 197, 1080, 827 ] "
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    15
+    $ObjectID		    1
   }
-  Object {
-    $PropName		    "DataTransfer"
-    $ObjectID		    27
-    $ClassName		    "Simulink.GlobalDataTransfer"
-    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
-    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
-    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
-    DefaultExtrapolationMethodBetweenContTasks "None"
-    AutoInsertRateTranBlk   [0]
-  }
-  ExplicitPartitioning	  off
   BlockDefaults {
     ForegroundColor	    "black"
     BackgroundColor	    "white"
@@ -785,25 +585,6 @@ Model {
     FontWeight		    "normal"
     FontAngle		    "normal"
   }
-  MaskDefaults {
-    SelfModifiable	    "off"
-    IconFrame		    "on"
-    IconOpaque		    "on"
-    RunInitForIconRedraw    "off"
-    IconRotate		    "none"
-    PortRotate		    "default"
-    IconUnits		    "autoscale"
-  }
-  MaskParameterDefaults {
-    Evaluate		    "on"
-    Tunable		    "on"
-    NeverSave		    "off"
-    Internal		    "off"
-    ReadOnly		    "off"
-    Enabled		    "on"
-    Visible		    "on"
-    ToolTip		    "on"
-  }
   BlockParameterDefaults {
     Block {
       BlockType		      Constant
@@ -812,6 +593,10 @@ Model {
       SamplingMode	      "Sample based"
       OutMin		      "[]"
       OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
       OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
       LockScale		      off
       SampleTime	      "inf"
@@ -832,15 +617,19 @@ Model {
     Block {
       BlockType		      Inport
       Port		      "1"
-      OutputFunctionCall      off
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: auto"
-      LockScale		      off
+      UseBusObject	      off
+      BusObject		      "BusObject"
       BusOutputAsStruct	      off
       PortDimensions	      "-1"
       VarSizeSig	      "Inherit"
       SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
       SignalType	      "auto"
       SamplingMode	      "auto"
       LatchByDelayingOutsideSignal off
@@ -873,14 +662,19 @@ Model {
     Block {
       BlockType		      Outport
       Port		      "1"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: auto"
-      LockScale		      off
+      UseBusObject	      off
+      BusObject		      "BusObject"
       BusOutputAsStruct	      off
       PortDimensions	      "-1"
       VarSizeSig	      "Inherit"
       SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
       SignalType	      "auto"
       SamplingMode	      "auto"
       SourceOfInitialOutputValue "Dialog"
@@ -888,7 +682,7 @@ Model {
       InitialOutput	      "[]"
     }
     Block {
-      BlockType		      S-Function
+      BlockType		      "S-Function"
       FunctionName	      "system"
       SFunctionModules	      "''"
       PortCounts	      "[]"
@@ -904,7 +698,6 @@ Model {
       SystemSampleTime	      "-1"
       RTWFcnNameOpts	      "Auto"
       RTWFileNameOpts	      "Auto"
-      FunctionInterfaceSpec   "void_void"
       RTWMemSecFuncInitTerm   "Inherit from model"
       RTWMemSecFuncExecute    "Inherit from model"
       RTWMemSecDataConstants  "Inherit from model"
@@ -912,11 +705,7 @@ Model {
       RTWMemSecDataParameters "Inherit from model"
       SimViewingDevice	      off
       DataTypeOverride	      "UseLocalSettings"
-      DataTypeOverrideAppliesTo	"AllNumericTypes"
       MinMaxOverflowLogging   "UseLocalSettings"
-      SFBlockType	      "NONE"
-      Variant		      off
-      GeneratePreprocessorConditionals off
     }
     Block {
       BlockType		      Terminator
@@ -924,8 +713,8 @@ Model {
   }
   System {
     Name		    "pendule_inverse"
-    Location		    [-8, -8, 1608, 868]
-    Open		    off
+    Location		    [524, 129, 1203, 532]
+    Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -938,24 +727,23 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "29"
+    SIDHighWatermark	    23
     Block {
       BlockType		      Constant
       Name		      "Constant"
-      SID		      "23"
+      SID		      23
       Position		      [35, 65, 65, 95]
-      ZOrder		      -1
       Value		      "0"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
     }
     Block {
       BlockType		      SubSystem
       Name		      "Embedded\nMATLAB Function"
-      SID		      "1"
+      SID		      1
       Ports		      [5, 1]
       Position		      [130, 70, 250, 170]
-      ZOrder		      -2
       ForegroundColor	      "blue"
-      ErrorFcn		      "Stateflow.Translate.translate"
       PermitHierarchicalResolution "ExplicitOnly"
       TreatAsAtomicUnit	      on
       MinAlgLoopOccurrences   off
@@ -963,12 +751,25 @@ Model {
       RTWSystemCode	      "Auto"
       FunctionWithSeparateData off
       Opaque		      off
+      Array {
+	Type			"Handle"
+	Dimension		0
+	PropName		"AvailSigsLoadSave"
+      }
       RequestExecContextInheritance off
       MaskHideContents	      off
-      SFBlockType	      "MATLAB Function"
+      MaskType		      "Stateflow"
+      MaskDescription	      "Embedded MATLAB block"
+      MaskDisplay	      "disp('fcn');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
       System {
 	Name			"Embedded\nMATLAB Function"
-	Location		[227, 345, 838, 789]
+	Location		[257, 457, 812, 717]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -981,71 +782,66 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"16"
+	SIDHighWatermark	13
 	Block {
 	  BlockType		  Inport
 	  Name			  "x_ref"
-	  SID			  "1::1"
+	  SID			  1
 	  Position		  [20, 101, 40, 119]
-	  ZOrder		  -1
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
 	  Name			  "x"
-	  SID			  "1::2"
+	  SID			  2
 	  Position		  [20, 136, 40, 154]
-	  ZOrder		  -2
 	  Port			  "2"
 	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
 	}
 	Block {
 	  BlockType		  Inport
 	  Name			  "x_dot"
-	  SID			  "1::3"
+	  SID			  3
 	  Position		  [20, 171, 40, 189]
-	  ZOrder		  -3
 	  Port			  "3"
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
 	  Name			  "theta"
-	  SID			  "1::4"
+	  SID			  4
 	  Position		  [20, 206, 40, 224]
-	  ZOrder		  -4
 	  Port			  "4"
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
 	  Name			  "theta_dot"
-	  SID			  "1::5"
+	  SID			  5
 	  Position		  [20, 246, 40, 264]
-	  ZOrder		  -5
 	  Port			  "5"
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Demux
 	  Name			  " Demux "
-	  SID			  "1::15"
+	  SID			  11
 	  Ports			  [1, 1]
-	  Position		  [270, 230, 320, 270]
-	  ZOrder		  2
+	  Position		  [270, 220, 320, 260]
 	  Outputs		  "1"
 	}
 	Block {
-	  BlockType		  S-Function
+	  BlockType		  "S-Function"
 	  Name			  " SFunction "
-	  SID			  "1::14"
+	  SID			  10
 	  Tag			  "Stateflow S-Function pendule_inverse 2"
 	  Ports			  [5, 2]
 	  Position		  [180, 100, 230, 220]
-	  ZOrder		  1
 	  FunctionName		  "sf_sfun"
 	  PortCounts		  "[5 2]"
-	  EnableBusSupport	  off
+	  EnableBusSupport	  on
 	  Port {
 	    PortNumber		    2
 	    Name		    "Force"
@@ -1056,17 +852,23 @@ Model {
 	Block {
 	  BlockType		  Terminator
 	  Name			  " Terminator "
-	  SID			  "1::16"
-	  Position		  [460, 241, 480, 259]
-	  ZOrder		  3
+	  SID			  13
+	  Position		  [460, 231, 480, 249]
 	}
 	Block {
 	  BlockType		  Outport
 	  Name			  "Force"
-	  SID			  "1::9"
+	  SID			  9
 	  Position		  [460, 101, 480, 119]
-	  ZOrder		  -9
 	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  DstBlock		  " Demux "
+	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "x_ref"
@@ -1112,21 +914,14 @@ Model {
 	  DstBlock		  " Terminator "
 	  DstPort		  1
 	}
-	Line {
-	  SrcBlock		  " SFunction "
-	  SrcPort		  1
-	  DstBlock		  " Demux "
-	  DstPort		  1
-	}
       }
     }
     Block {
       BlockType		      SubSystem
       Name		      "Pendule Inverse"
-      SID		      "2"
+      SID		      2
       Ports		      [1, 4]
       Position		      [295, 77, 415, 163]
-      ZOrder		      -3
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
       RTWSystemCode	      "Auto"
@@ -1136,7 +931,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Pendule Inverse"
-	Location		[-8, -8, 1608, 868]
+	Location		[41, 94, 929, 580]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1152,51 +947,44 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "Force"
-	  SID			  "3"
+	  SID			  3
 	  Position		  [50, 213, 80, 227]
-	  ZOrder		  -1
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Integrator
 	  Name			  " theta_dot"
-	  SID			  "4"
+	  SID			  4
 	  Ports			  [1, 1]
-	  Position		  [800, 270, 830, 300]
-	  ZOrder		  -2
+	  Position		  [535, 270, 565, 300]
 	}
 	Block {
 	  BlockType		  Integrator
 	  Name			  " x_dot"
-	  SID			  "5"
+	  SID			  5
 	  Ports			  [1, 1]
-	  Position		  [800, 135, 830, 165]
-	  ZOrder		  -3
+	  Position		  [535, 135, 565, 165]
 	}
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fonction f1"
-	  SID			  "6"
-	  Position		  [310, 137, 700, 163]
-	  ZOrder		  -4
-	  Expr			  "(u(3) - m*l*(u(2)^2)*sin(u(4)) + m*g*sin(u(4))*cos(u(4))) / (M + m*(1-(cos(u(5)^2))"
+	  SID			  6
+	  Position		  [290, 135, 410, 165]
+	  Expr			  "A completer"
 	}
 	Block {
 	  BlockType		  Fcn
 	  Name			  "Fonction f2"
-	  SID			  "7"
-	  Position		  [285, 272, 770, 298]
-	  ZOrder		  -5
-	  Expr			  "(((u(3) + cos(u(4))*sin(u(4))*m*g - m*l*(u(5)^2)*sin(u(4)))*cos(u(4))) / (M+m*(sin(u(4))^2)) + g*sin(u(4)"
-	  ")) / l"
+	  SID			  7
+	  Position		  [290, 270, 410, 300]
+	  Expr			  "A completer"
 	}
 	Block {
 	  BlockType		  Mux
 	  Name			  "Mux2"
-	  SID			  "8"
+	  SID			  8
 	  Ports			  [5, 1]
 	  Position		  [190, 109, 210, 331]
-	  ZOrder		  -6
 	  NamePlacement		  "alternate"
 	  ShowName		  off
 	  Inputs		  "5"
@@ -1205,10 +993,9 @@ Model {
 	Block {
 	  BlockType		  Integrator
 	  Name			  "theta"
-	  SID			  "9"
+	  SID			  9
 	  Ports			  [1, 1]
-	  Position		  [905, 270, 935, 300]
-	  ZOrder		  -7
+	  Position		  [640, 270, 670, 300]
 	  LimitOutput		  on
 	  UpperSaturationLimit	  "pi/2"
 	  LowerSaturationLimit	  "-pi/2"
@@ -1216,10 +1003,9 @@ Model {
 	Block {
 	  BlockType		  Integrator
 	  Name			  "x "
-	  SID			  "10"
+	  SID			  10
 	  Ports			  [1, 1]
-	  Position		  [905, 135, 935, 165]
-	  ZOrder		  -8
+	  Position		  [640, 135, 670, 165]
 	  LimitOutput		  on
 	  UpperSaturationLimit	  "9.5"
 	  LowerSaturationLimit	  "-9.5"
@@ -1227,35 +1013,31 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "x"
-	  SID			  "11"
-	  Position		  [1055, 143, 1085, 157]
-	  ZOrder		  -9
+	  SID			  11
+	  Position		  [790, 143, 820, 157]
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
 	  Name			  "x_dot "
-	  SID			  "12"
-	  Position		  [1055, 188, 1085, 202]
-	  ZOrder		  -10
+	  SID			  12
+	  Position		  [790, 188, 820, 202]
 	  Port			  "2"
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
 	  Name			  "theta "
-	  SID			  "13"
-	  Position		  [1055, 278, 1085, 292]
-	  ZOrder		  -11
+	  SID			  13
+	  Position		  [790, 278, 820, 292]
 	  Port			  "3"
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
 	  Name			  "theta_dot "
-	  SID			  "14"
-	  Position		  [1055, 233, 1085, 247]
-	  ZOrder		  -12
+	  SID			  14
+	  Position		  [790, 233, 820, 247]
 	  Port			  "4"
 	  IconDisplay		  "Port number"
 	}
@@ -1270,18 +1052,21 @@ Model {
 	  SrcPort		  1
 	  Points		  [25, 0]
 	  Branch {
-	    Points		    [0, -100; -800, 0; 0, 125]
-	    DstBlock		    "Mux2"
-	    DstPort		    2
-	  }
-	  Branch {
-	    Points		    [0, 45]
-	    DstBlock		    "x_dot "
-	    DstPort		    1
-	  }
-	  Branch {
 	    DstBlock		    "x "
 	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    Branch {
+	      Points		      [0, -100; -535, 0; 0, 125]
+	      DstBlock		      "Mux2"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, 45]
+	      DstBlock		      "x_dot "
+	      DstPort		      1
+	    }
 	  }
 	}
 	Line {
@@ -1289,7 +1074,7 @@ Model {
 	  SrcPort		  1
 	  Points		  [90, 0]
 	  Branch {
-	    Points		    [0, -120; -985, 0; 0, 100]
+	    Points		    [0, -120; -720, 0; 0, 100]
 	    DstBlock		    "Mux2"
 	    DstPort		    1
 	  }
@@ -1333,7 +1118,7 @@ Model {
 	    DstPort		    1
 	  }
 	  Branch {
-	    Points		    [0, 150; -800, 0; 0, -125]
+	    Points		    [0, 150; -535, 0; 0, -125]
 	    DstBlock		    "Mux2"
 	    DstPort		    5
 	  }
@@ -1347,7 +1132,7 @@ Model {
 	    DstPort		    1
 	  }
 	  Branch {
-	    Points		    [0, 175; -995, 0; 0, -195]
+	    Points		    [0, 175; -730, 0; 0, -195]
 	    DstBlock		    "Mux2"
 	    DstPort		    4
 	  }
@@ -1359,50 +1144,37 @@ Model {
 	  DstPort		  3
 	}
 	Annotation {
-	  SID			  "24"
 	  Name			  "x  "
 	  Position		  [144, 117]
-	  ZOrder		  -1
 	}
 	Annotation {
-	  SID			  "25"
 	  Name			  "x_dot "
 	  Position		  [139, 162]
-	  ZOrder		  -2
 	}
 	Annotation {
-	  SID			  "26"
 	  Name			  "theta  "
 	  Position		  [146, 254]
-	  ZOrder		  -3
 	}
 	Annotation {
-	  SID			  "27"
 	  Name			  "theta_dot  "
 	  Position		  [140, 297]
-	  ZOrder		  -4
 	}
 	Annotation {
-	  SID			  "28"
 	  Name			  "x_ddot"
-	  Position		  [440, 129]
-	  ZOrder		  -5
+	  Position		  [440, 139]
 	}
 	Annotation {
-	  SID			  "29"
 	  Name			  "theta_ddot"
-	  Position		  [439, 264]
-	  ZOrder		  -6
+	  Position		  [444, 274]
 	}
       }
     }
     Block {
       BlockType		      SubSystem
       Name		      "Visualisation"
-      SID		      "15"
+      SID		      15
       Ports		      [2]
       Position		      [500, 68, 620, 152]
-      ZOrder		      -4
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
       RTWSystemCode	      "Auto"
@@ -1412,7 +1184,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Visualisation"
-	Location		[492, 116, 1193, 545]
+	Location		[522, 228, 1167, 473]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1428,35 +1200,33 @@ Model {
 	Block {
 	  BlockType		  Inport
 	  Name			  "x"
-	  SID			  "16"
+	  SID			  16
 	  Position		  [25, 43, 55, 57]
-	  ZOrder		  -1
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
 	  Name			  "theta"
-	  SID			  "17"
+	  SID			  17
 	  Position		  [30, 158, 60, 172]
-	  ZOrder		  -2
 	  Port			  "2"
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Constant
 	  Name			  "Axe de rotation"
-	  SID			  "18"
+	  SID			  18
 	  Position		  [150, 120, 185, 150]
-	  ZOrder		  -3
 	  Value			  "[0 0 1]"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
 	}
 	Block {
 	  BlockType		  Mux
 	  Name			  "Mux"
-	  SID			  "19"
+	  SID			  19
 	  Ports			  [2, 1]
 	  Position		  [295, 41, 300, 79]
-	  ZOrder		  -4
 	  ShowName		  off
 	  Inputs		  "2"
 	  DisplayOption		  "bar"
@@ -1464,10 +1234,9 @@ Model {
 	Block {
 	  BlockType		  Mux
 	  Name			  "Mux1"
-	  SID			  "20"
+	  SID			  20
 	  Ports			  [2, 1]
 	  Position		  [295, 121, 300, 179]
-	  ZOrder		  -5
 	  ShowName		  off
 	  Inputs		  "2"
 	  DisplayOption		  "bar"
@@ -1475,22 +1244,22 @@ Model {
 	Block {
 	  BlockType		  Constant
 	  Name			  "Position y et z"
-	  SID			  "21"
+	  SID			  21
 	  Position		  [150, 55, 185, 85]
-	  ZOrder		  -6
 	  Value			  "[0 0]"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "VR Sink"
-	  SID			  "22"
+	  SID			  22
 	  Ports			  [2]
 	  Position		  [530, 71, 625, 144]
-	  ZOrder		  -7
-	  LibraryVersion	  "1.26"
+	  InstantiateOnLoad	  on
+	  LibraryVersion	  "1.241"
 	  SourceBlock		  "vrlib/VR Sink"
 	  SourceType		  "Virtual Reality Sink"
-	  InstantiateOnLoad	  on
 	  SampleTime		  "0.1"
 	  ViewEnable		  on
 	  RemoteChange		  off
@@ -1499,7 +1268,6 @@ Model {
 	  WorldFileName		  "pendule_inverse.wrl"
 	  AutoView		  off
 	  VideoDimensions	  "[]"
-	  AllowVariableSize	  off
 	}
 	Line {
 	  SrcBlock		  "Mux"
@@ -1599,9 +1367,10 @@ Model {
 }
 # Finite State Machines
 #
-#    Stateflow Version 7.6 (R2013a) dated Jan 19 2013, 14:32:20
+#    Stateflow Version 7.5 (R2010a) dated Jan 19 2010, 18:40:00
 #
 #
+
 
 Stateflow {
   machine {
@@ -1610,26 +1379,24 @@ Stateflow {
     created		    "24-Mar-2009 16:07:51"
     isLibrary		    0
     firstTarget		    13
-    sfVersion		    76014001.0015
+    sfVersion		    75014000
   }
   chart {
     id			    2
     name		    "Embedded\nMATLAB Function"
-    windowPosition	    [413 137 213 385]
+    windowPosition	    [309.994 311.25 200.25 189.75]
     viewLimits		    [0 156.75 0 153.75]
-    screen		    [1 1 1600 900 1.333333333333333]
+    screen		    [1 1 1408 743 1.333333333333333]
     treeNode		    [0 3 0 0]
-    firstTransition	    11
-    firstJunction	    10
+    firstTransition	    5
+    firstJunction	    4
     viewObj		    2
-    visible		    1
     machine		    1
-    subviewS {
-    }
+    toolbarMode		    LIBRARY_TOOLBAR
     ssIdHighWaterMark	    9
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    4
+    firstData		    6
     chartFileNumber	    2
     disableImplicitCasting  1
     eml {
@@ -1653,18 +1420,48 @@ Stateflow {
       isEML		      1
       script		      "function Force = fcn(x_ref,x,x_dot,theta,theta_dot)\n% This block supports the Embedded MATLAB su"
       "bset.\n% See the help menu for details. \n\nForce = 0;"
-      editorLayout	      "100 M4x1[10 5 700 500]"
+      editorLayout	      "100 M4x1[256 313 671 364]"
       fimathString	      "fimath(...\n'RoundMode', 'floor',...\n'OverflowMode', 'wrap',...\n'ProductMode', 'KeepLSB', "
       "'ProductWordLength', 32,...\n'SumMode', 'KeepLSB', 'SumWordLength', 32,...\n'CastBeforeSum', true)"
       fimathForFiConstructors FimathMatlabFactoryDefault
       emlDefaultFimath	      FimathUserSpecified
     }
   }
-  data {
+  junction {
     id			    4
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    linkNode		    [2 0 0]
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    5
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [7 0 -1 -1 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    linkNode		    [2 0 0]
+    dataLimits		    [23.575 23.575 14.625 34.575]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  data {
+    id			    6
     ssIdNumber		    9
     name		    "x_ref"
-    linkNode		    [2 0 5]
+    linkNode		    [2 0 7]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -1683,10 +1480,10 @@ Stateflow {
     dataType		    "Inherit: Same as Simulink"
   }
   data {
-    id			    5
+    id			    7
     ssIdNumber		    4
     name		    "x"
-    linkNode		    [2 4 6]
+    linkNode		    [2 6 8]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -1702,10 +1499,10 @@ Stateflow {
     dataType		    "Inherit: Same as Simulink"
   }
   data {
-    id			    6
+    id			    8
     ssIdNumber		    5
     name		    "Force"
-    linkNode		    [2 5 7]
+    linkNode		    [2 7 9]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -1722,10 +1519,10 @@ Stateflow {
     dataType		    "Inherit: Same as Simulink"
   }
   data {
-    id			    7
+    id			    9
     ssIdNumber		    6
     name		    "x_dot"
-    linkNode		    [2 6 8]
+    linkNode		    [2 8 10]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -1744,10 +1541,10 @@ Stateflow {
     dataType		    "Inherit: Same as Simulink"
   }
   data {
-    id			    8
+    id			    10
     ssIdNumber		    7
     name		    "theta"
-    linkNode		    [2 7 9]
+    linkNode		    [2 9 11]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -1766,10 +1563,10 @@ Stateflow {
     dataType		    "Inherit: Same as Simulink"
   }
   data {
-    id			    9
+    id			    11
     ssIdNumber		    8
     name		    "theta_dot"
-    linkNode		    [2 8 0]
+    linkNode		    [2 10 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -1786,39 +1583,6 @@ Stateflow {
       frame		      SF_FRAME_INHERITED
     }
     dataType		    "Inherit: Same as Simulink"
-  }
-  junction {
-    id			    10
-    position		    [23.5747 49.5747 7]
-    chart		    2
-    linkNode		    [2 0 0]
-    subviewer		    2
-    ssIdNumber		    3
-    type		    CONNECTIVE_JUNCTION
-  }
-  transition {
-    id			    11
-    labelString		    "{eML_blk_kernel();}"
-    labelPosition	    [32.125 19.875 102.544 14.964]
-    fontSize		    12
-    src {
-      intersection	      [0 0 1 0 23.5747 14.625 0 0]
-    }
-    dst {
-      id		      10
-      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
-    }
-    midPoint		    [23.5747 24.9468]
-    chart		    2
-    linkNode		    [2 0 0]
-    dataLimits		    [21.175 25.975 14.625 42.575]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    2
   }
   instance {
     id			    12
